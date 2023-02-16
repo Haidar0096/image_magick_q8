@@ -1,6 +1,6 @@
 name: image_magick_q8
 description: Dart bindings for ImageMagick C library which is used to edit images.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/Haidar0096/image_magick_q8
 repository: https://github.com/Haidar0096/image_magick_q8
 documentation: https://github.com/Haidar0096/image_magick_q8
