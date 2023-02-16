@@ -12,6 +12,10 @@ project(${PROJECT_NAME} LANGUAGES CXX)
 # This can be changed to accomodate different builds.
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/../src" "${CMAKE_CURRENT_BINARY_DIR}/shared")
 
+# ImageMagick DLLs read from the path set by the parent project.
+file(GLOB IMAGEMAGICK_DLLS ${ImageMagick-dlls}/*.dll)
+
+
 # List of absolute paths to libraries that should be bundled with the plugin.
 # This list could contain prebuilt libraries, or libraries created by an
 # external build triggered from this build file.
@@ -19,5 +23,7 @@ set(image_magick_q8_bundled_libraries
   # Defined in ../src/CMakeLists.txt.
   # This can be changed to accomodate different builds.
   $<TARGET_FILE:image_magick_q8>
+  # ImageMagick dlls to be bundled with the app's executable
+  ${IMAGEMAGICK_DLLS}
   PARENT_SCOPE
 )
