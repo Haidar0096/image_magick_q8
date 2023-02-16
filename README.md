@@ -5,7 +5,6 @@
 - [ImageMagickFFI Plugin](#imagemagickffi-plugin)
   - [Feel Native](#feel-native)
   - [What Can It Do?](#what-can-it-do)
-- [Install](#install)
 - [Variants](#variants)
 - [Usage](#usage)
   - [In a Flutter app:](#in-a-flutter-app)
@@ -38,10 +37,6 @@ Here are some of the things you can do with this plugin, along with the  names o
 
  Have a look the [#Usage](#usage) section below for more insights.   
 ![ImageMagick](https://imagemagick.org/image/examples.jpg)
-
-# Install
-
-`image_magick_ffi: <latest_version>`
 
 # Variants
 This plugin provides the Q8 variant of ImageMagick only. If you want to use another variant, then use the corresponding package for that variant.
